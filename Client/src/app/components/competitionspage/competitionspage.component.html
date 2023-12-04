@@ -1,0 +1,22 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col" *ngFor="let competition of competitions">
+                <div class="card shadow-sm">
+                    <img class="card-img-top" [src]="competition.image" alt="Competition Image" height="225" />
+                    <div class="card-body">
+                        <p class="card-text">{{competition.title}}</p>
+                        <p class="card-text">{{competition.description}}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
+                            </div>
+                            <!-- <small class="text-muted">@competition.UserId</small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
