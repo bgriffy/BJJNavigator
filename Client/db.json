@@ -1,12 +1,56 @@
 {
-    "competitions": [
-      { "id": 1, "title": "Competition 1", "description": "This is a description of the first competition.", "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/GABRIEL_VELLA_vs_ROMINHO_51.jpg" }, 
-      { "id": 2, "title": "Competition 2", "description": "This is a description of the second competition.", "image": "https://jitsmagazine.com/wp-content/uploads/2023/05/Mark-Zuckerberg-BJJ-Tournament-750x375.png?ezimgfmt=ngcb1/notWebP" }
-    ],
-    "gyms": [
-        { "id": 1, "title": "BJJ Gym 1", "description": "This is a description of BJJ Gym # 1", "image": "https://i0.wp.com/thefightersguide.com/wp-content/uploads/2020/08/Landing-Page-BJJ-Gym.jpg?w=1000&ssl=1" }, 
-        { "id": 2, "title": "BJJ Gym 2", "description": "This is a description of BJJ Gym # 2", "image": "https://bjj-world.com/wp-content/uploads/2019/12/30-696x389.jpg" },
-        { "id": 3, "title": "BJJ Gym 3", "description": "This is a description of BJJ Gym # 3", "image": "https://jiujitsulegacy.com/wp-content/uploads/2021/01/BJJ-training-session-in-BJJ-gym.jpg" },
-        { "id": 4, "title": "BJJ Gym 4", "description": "This is a description of BJJ Gym # 4", "image": "https://gigharbormma.com/wp-content/uploads/2021/08/interior.jpg" }
-      ]
-  }
+  "competitions": [
+    {
+      "id": 1,
+      "title": "Competition 1",
+      "description": "This is a description of the first competition.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/GABRIEL_VELLA_vs_ROMINHO_51.jpg", 
+      "address": {
+        "id": 1, 
+        "street": "Test Street 1", 
+        "city": "Gainesville", 
+        "state": "FL", 
+        "zip": "32777"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Competition 2",
+      "description": "This is a description of the second competition.",
+      "image": "https://jitsmagazine.com/wp-content/uploads/2023/05/Mark-Zuckerberg-BJJ-Tournament-750x375.png?ezimgfmt=ngcb1/notWebP", 
+      "address": {
+        "id": 2, 
+        "street": "Test Street 2", 
+        "city": "Valdosta", 
+        "state": "GA", 
+        "zip": "32666"
+      }
+    }
+  ],
+  "gyms": [
+    {
+      "id": 1,
+      "title": "BJJ Gym 1",
+      "description": "This is a description of BJJ Gym # 1",
+      "image": "https://i0.wp.com/thefightersguide.com/wp-content/uploads/2020/08/Landing-Page-BJJ-Gym.jpg?w=1000&ssl=1"
+    },
+    {
+      "id": 2,
+      "title": "BJJ Gym 2",
+      "description": "This is a description of BJJ Gym # 2",
+      "image": "https://bjj-world.com/wp-content/uploads/2019/12/30-696x389.jpg"
+    },
+    {
+      "id": 3,
+      "title": "BJJ Gym 3",
+      "description": "This is a description of BJJ Gym # 3",
+      "image": "https://jiujitsulegacy.com/wp-content/uploads/2021/01/BJJ-training-session-in-BJJ-gym.jpg"
+    },
+    {
+      "id": 4,
+      "title": "BJJ Gym 4",
+      "description": "This is a description of BJJ Gym # 4",
+      "image": "https://gigharbormma.com/wp-content/uploads/2021/08/interior.jpg"
+    }
+  ]
+}

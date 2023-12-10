@@ -1,6 +1,6 @@
 <div id="modal-content-wrapper" class="container p-4">
     <div mat-dialog-title class="dialog-title">
-        <h1>Competition Modal Component</h1>
+        <h1>{{competition.title}}</h1>
         <button mat-icon-button aria-label="close dialog" mat-dialog-close (click)="closeModal()" style="border: none !important; background: white; outline:none !important;" autofocus="false">
             <mat-icon>close</mat-icon>
         </button>
@@ -13,47 +13,50 @@
             </div>
 
             <div class="col-md-4">
-                <h3>{{competition.title}}</h3>
                 <p>{{competition.description}}</p>
                 <h3>Location</h3>
                 <ul>
-                    <li>Competition City</li>
-                    <li>Competition State</li>
+                    <li>Street: {{competition.address.street}}</li>
+                    <li>City: {{competition.address.city}}</li>
+                    <li>State: {{competition.address.state}}</li>
+                    <li>Zip: {{competition.address.zip}}</li>
                 </ul>
             </div>
 
         </div>
         <!-- /.row -->
         <!-- Related Projects Row -->
-        <h3 class="my-4">Related Competitions</h3>
 
+        <!-- Use dummy pictures for now -->
+
+        <h3 class="my-4">Related Competitions</h3>
         <div class="row">
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="#">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x300" alt="">
+                    <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHsZOLa2UdFrC_kFju_DNaYxaHhWMqdiZcZA&usqp=CAU" style="width:250px;height:150px;" alt="">
                 </a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="#">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x300" alt="">
+                    <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjzJ1YfpsuOFv76E6WBfjT0BfF__GDYFB_gA&usqp=CAU" style="width:250px;height:150px;" alt="">
                 </a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="#">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x300" alt="">
+                    <img class="img-fluid" src="https://cdn.bloodyelbow.com/wp-content/uploads/2023/04/Screenshot-2023-04-06-at-3.02.02-PM.png" style="width:250px;height:150px;" alt="">
                 </a>
             </div>
 
             <div class="col-md-3 col-sm-6 mb-4">
                 <a href="#">
-                    <img class="img-fluid" src="https://via.placeholder.com/500x300" alt="">
+                    <img class="img-fluid" src="https://acesjiujitsuclub.s3.amazonaws.com/wp-content/uploads/2022/02/06231531/Coaches.png" style="width:250px;height:150px;" alt="">
                 </a>
             </div>
 
-        </div>
+        </div> 
         <!-- /.row -->
 
         <!-- /.container -->

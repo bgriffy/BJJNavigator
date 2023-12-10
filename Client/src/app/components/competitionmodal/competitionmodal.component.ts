@@ -16,6 +16,9 @@ export class CompetitionmodalComponent {
 
   constructor(public dialogRef: MatDialogRef<CompetitionmodalComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { 
     this.competition = data.competition;
+    console.log("competition state:" + this.competition.address.state);
+    console.log("competition city:" + this.competition.address.city);
+    console.log("competition street:" + this.competition.address.street);
   }
 
   closeModal() {
