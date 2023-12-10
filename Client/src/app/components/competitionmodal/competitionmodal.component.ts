@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { Competition } from '../../models/Competition';
 
 @Component({
   selector: 'app-competitionmodal',
@@ -11,7 +12,11 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class CompetitionmodalComponent {
 
-  constructor(public dialogRef: MatDialogRef<CompetitionmodalComponent>) { }
+  competition!: Competition;
+
+  constructor(public dialogRef: MatDialogRef<CompetitionmodalComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { 
+    this.competition = data.competition;
+  }
 
   closeModal() {
     this.dialogRef.close();

@@ -32,10 +32,13 @@ export class CompetitionspageComponent {
     this.competitionService.getCompetitions().subscribe((competitions) => this.competitions = competitions);
   }
 
-  openModal() {
+  openModal(competition: Competition) {
     this.dialogConfig.id = "competition-modal-component";
     this.dialogConfig.width = "800px";
     this.dialogConfig.autoFocus = false;
+    this.dialogConfig.data = {
+      competition: competition,
+    };
     
     this.modalDialog = this.matDialog.open(CompetitionmodalComponent, this.dialogConfig);
   }

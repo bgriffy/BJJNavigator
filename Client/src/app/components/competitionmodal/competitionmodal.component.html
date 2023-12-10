@@ -9,14 +9,12 @@
     <div>
         <div class="row">
             <div class="col-md-8">
-                <img class="img-fluid"
-                    src="https://jitsmagazine.com/wp-content/uploads/2023/05/Mark-Zuckerberg-BJJ-Tournament-750x375.png?ezimgfmt=ngcb1/notWebP"
-                    alt="">
+                <img class="img-fluid" [src]="competition.image" alt=""/>
             </div>
 
             <div class="col-md-4">
-                <h3>Competition Title</h3>
-                <p>Competition Description</p>
+                <h3>{{competition.title}}</h3>
+                <p>{{competition.description}}</p>
                 <h3>Location</h3>
                 <ul>
                     <li>Competition City</li>
