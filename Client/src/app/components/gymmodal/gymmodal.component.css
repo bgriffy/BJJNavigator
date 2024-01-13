@@ -1,0 +1,23 @@
+#modal-content-wrapper {
+    height: 100%;
+    background: white;
+}
+
+#modal-title {
+    font-size: 22px;
+}
+
+#modal-footer {
+    justify-self: right;
+    align-self: center;
+}
+
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+mat-icon{
+    outline:none !important;
+}

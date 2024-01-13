@@ -14,7 +14,7 @@ const httpOptions = {
 })
 
 export class CompetitionService {
-  private apiUrl :string = "http://localhost:5000/Competitions";
+  private apiUrl :string = "http://bjjnavigator.com/api/Competitions";
 
   constructor(private http: HttpClient) { }
 

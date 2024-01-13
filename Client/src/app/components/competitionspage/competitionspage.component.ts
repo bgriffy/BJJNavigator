@@ -15,10 +15,9 @@ import { CompetitionmodalComponent } from '../competitionmodal/competitionmodal.
 export class CompetitionspageComponent {
   dialogConfig = new MatDialogConfig();
   modalDialog: MatDialogRef<CompetitionmodalComponent, any> | undefined
-   competitions: Competition[] = [];
+  competitions: Competition[] = [];
 
-   constructor(private competitionService: CompetitionService, public matDialog: MatDialog) {
-  }
+  constructor(private competitionService: CompetitionService, public matDialog: MatDialog) { }
 
   ngAfterViewInit(): void {
     // document.onclick = (args: any) : void => {
@@ -28,7 +27,7 @@ export class CompetitionspageComponent {
     //   }
   }
 
-   ngOnInit(): void {
+  ngOnInit(): void {
     this.competitionService.getCompetitions().subscribe((competitions) => this.competitions = competitions);
   }
 
@@ -37,9 +36,9 @@ export class CompetitionspageComponent {
     this.dialogConfig.width = "800px";
     this.dialogConfig.autoFocus = false;
     this.dialogConfig.data = {
-      competition: competition,
+      competition: competition
     };
-    
+
     this.modalDialog = this.matDialog.open(CompetitionmodalComponent, this.dialogConfig);
   }
 }

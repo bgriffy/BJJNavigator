@@ -14,7 +14,7 @@ const httpOptions = {
 })
 
 export class GymService {
-  private apiUrl :string = "http://localhost:5000/Gyms";
+  private apiUrl :string = "http://bjjnavigator.com/api/Gyms";
 
   constructor(private http: HttpClient) { }
 
